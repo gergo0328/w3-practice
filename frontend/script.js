@@ -27,11 +27,24 @@ async function loadEvent() {
         </div>
         `
     }
+    function countryComponent(countryFlag) {
+        return `
+        <div class="countryflag">
+            <h2>${countryFlag}</h2>
+        </div>
+        `
+    }
 
    for (let index = 0; index < countriesJson.length; index++) {
        console.log(index)
       // document.getElementById('countries').insertAdjacentHTML("beforeend", countriesJson[index].name.common)
         countriesSection.insertAdjacentHTML("beforeend", countryComponent(countriesJson[index].name.common))
+   }
+
+   for (let index = 0; index < countriesJson.length; index++) {
+       console.log(index)
+       countriesSection.insertAdjacentHTML ("beforeend",countryComponent(countriesJson[index].flag))
+       
    }
 }
 

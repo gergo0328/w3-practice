@@ -183,6 +183,6 @@ body > div > div > div > div > div > div > div > div > div > div{
     transform: translate(-50%, -50%);
 }
 section{
-    position: fixed;
+   /* position: fixed;*/
     bottom: 10px;
 }
